@@ -15,16 +15,16 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let humanChoice = prompt("Quick, what's your choice!").toLowerCase();
-  console.log(humanChoice);
+  let humanInput = prompt("Quick, what's your choice!").toLowerCase();
+  console.log(humanInput);
   while (
-    humanChoice !== "rock" &&
-    humanChoice !== "paper" &&
-    humanChoice !== "scissors"
+    humanInput !== "rock" &&
+    humanInput !== "paper" &&
+    humanInput !== "scissors"
   ) {
-    humanChoice = prompt("Please select between rock, paper, or scissors!");
+    humanInput = prompt("Please select between rock, paper, or scissors!");
   }
-  console.log(humanChoice);
+  console.log(humanInput);
 }
 
 function playRound(humanChoice, computerChoice) {}
