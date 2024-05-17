@@ -60,9 +60,15 @@ function playRound(humanChoice, computerChoice) {
   console.log(`Current score:\nYou: ${humanScore}\nComputer: ${computerScore}`);
 }
 
-function playGame() {}
+function playGame() {
+  while (humanScore + computerScore < 5) {
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
+  }
+  const gameWin =
+    humanScore > computerScore ? "You won the game!" : "You lost, gitgud.";
+  console.log("Game ended. " + gameWin);
+}
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
+playGame();
