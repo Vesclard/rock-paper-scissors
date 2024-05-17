@@ -28,32 +28,30 @@ function playRound(humanChoice, computerChoice) {
   console.log(
     `Your choice: ${humanChoice}\nComputer Choice: ${computerChoice}`
   );
-  switch (humanChoice) {
-    case "rock":
-      if (computerChoice === "paper") {
-        console.log("Computer Wins!");
-        return;
-      } else {
-        console.log("You win!");
-        return;
-      }
-    case "paper":
-      if (computerChoice === "scissors") {
-        console.log("Computer Wins!");
-        return;
-      } else {
-        console.log("You win!");
-        return;
-      }
-    case "scissors":
-      if (computerChoice === "rock") {
-        console.log("Computer Wins!");
-        return;
-      } else {
-        console.log("You win!");
-        return;
-      }
+  if (humanChoice === computerChoice) {
+    console.log("Round tied.");
+    return;
   }
+  if (humanChoice === "rock") {
+    if (computerChoice === "paper") {
+      console.log("Computer Wins!");
+    } else {
+      console.log("You win!");
+    }
+  } else if (humanChoice === "paper") {
+    if (computerChoice === "scissors") {
+      console.log("Computer Wins!");
+    } else {
+      console.log("You win!");
+    }
+  } else {
+    if (computerChoice === "rock") {
+      console.log("Computer Wins!");
+    } else {
+      console.log("You win!");
+    }
+  }
+  console.log(`Current score:\nYou: ${humanScore}\nComputer: ${computerScore}`);
 }
 
 const humanSelection = getHumanChoice();
