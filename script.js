@@ -15,7 +15,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let humanChoice = prompt("Quick, what's your choice!");
+  let humanChoice = prompt("Quick, what's your choice!").toLowerCase();
   console.log(humanChoice);
   while (
     humanChoice !== "rock" &&
