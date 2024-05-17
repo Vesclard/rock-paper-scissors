@@ -26,7 +26,7 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
   console.log(
-    `Your choice: ${humanChoice}\nComputer Choice: ${computerChoice}`
+    `Your choice: ${humanChoice}\nComputer choice: ${computerChoice}`
   );
   if (humanChoice === computerChoice) {
     console.log("Round tied, no points given.");
