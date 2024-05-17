@@ -12,7 +12,15 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  const humanChoice = prompt("Quick, what's your choice!");
+  let humanChoice = prompt("Quick, what's your choice!");
+  console.log(humanChoice);
+  while (
+    humanChoice !== "rock" &&
+    humanChoice !== "paper" &&
+    humanChoice !== "scissors"
+  ) {
+    humanChoice = prompt("Please select between rock, paper, or scissors!");
+  }
   console.log(humanChoice);
 }
 
