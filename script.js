@@ -60,6 +60,8 @@ function playRound(humanChoice, computerChoice) {
   console.log(`Current score:\nYou: ${humanScore}\nComputer: ${computerScore}`);
 }
 
+function playGame() {}
+
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
