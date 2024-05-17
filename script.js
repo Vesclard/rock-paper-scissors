@@ -1,7 +1,6 @@
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3 + 1);
   let computerChoice;
-  console.log(randomNumber);
   if (randomNumber === 1) {
     computerChoice = "Rock";
   } else if (randomNumber === 2) {
@@ -12,4 +11,10 @@ function getComputerChoice() {
   console.log(computerChoice);
 }
 
+function getHumanChoice() {
+  const humanChoice = prompt("Quick, what's your choice!");
+  console.log(humanChoice);
+}
+
 getComputerChoice();
+getHumanChoice();
