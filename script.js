@@ -10,7 +10,6 @@ function getComputerChoice() {
   } else {
     return "scissors";
   }
-  console.log(computerChoice);
 }
 
 function getHumanChoice() {
@@ -25,9 +24,21 @@ function getHumanChoice() {
   return humanInput;
 }
 
-function playRound(humanChoice, computerChoice) {}
+function playRound(humanChoice, computerChoice) {
+  switch (humanChoice) {
+    case "rock":
+      console.log("you chose " + humanChoice);
+      break;
+    case "paper":
+      console.log("you chose " + humanChoice);
+      break;
+    case "scissors":
+      console.log("you chose " + humanChoice);
+      break;
+  }
+}
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-console.log(humanSelection + " " + computerSelection);
+playRound(humanSelection, computerSelection);
