@@ -29,26 +29,32 @@ function playRound(humanChoice, computerChoice) {
     `Your choice: ${humanChoice}\nComputer Choice: ${computerChoice}`
   );
   if (humanChoice === computerChoice) {
-    console.log("Round tied.");
+    console.log("Round tied, no points given.");
     return;
   }
   if (humanChoice === "rock") {
     if (computerChoice === "paper") {
       console.log("Computer Wins!");
+      computerScore++;
     } else {
       console.log("You win!");
+      humanScore++;
     }
   } else if (humanChoice === "paper") {
     if (computerChoice === "scissors") {
       console.log("Computer Wins!");
+      computerScore++;
     } else {
       console.log("You win!");
+      humanScore++;
     }
   } else {
     if (computerChoice === "rock") {
       console.log("Computer Wins!");
+      computerScore++;
     } else {
       console.log("You win!");
+      humanScore++;
     }
   }
   console.log(`Current score:\nYou: ${humanScore}\nComputer: ${computerScore}`);
