@@ -27,5 +27,7 @@ function getHumanChoice() {
   console.log(humanChoice);
 }
 
+function playRound(humanChoice, computerChoice) {}
+
 getComputerChoice();
 getHumanChoice();
