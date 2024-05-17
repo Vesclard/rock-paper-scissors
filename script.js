@@ -1,3 +1,6 @@
-console.log("Hello, World!");
+function getComputerChoice() {
+  const randomNumber = Math.floor(Math.random() * 10);
+  console.log(randomNumber);
+}
 
-function getComputerChoice() {}
+getComputerChoice();
